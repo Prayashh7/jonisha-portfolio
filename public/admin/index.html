@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Jonisha Thapa Portfolio</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<!-- ── Login Screen ── -->
+<div id="auth-screen">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <h1>Jonisha<span>.</span></h1>
+      <p>Portfolio Admin Dashboard</p>
+    </div>
+    <div id="login-error" class="auth-error"></div>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="admin-password">Password</label>
+        <input type="password" id="admin-password" placeholder="Enter admin password" autocomplete="current-password" autofocus required>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem">
+        Sign In
+      </button>
+    </form>
+    <p style="margin-top:1.5rem;font-size:0.75rem;color:var(--muted);text-align:center">
+      Secure admin access. Never share your password.
+    </p>
+  </div>
+</div>
+
+<!-- ── Admin App ── -->
+<div id="admin-app">
+
+  <!-- Sidebar -->
+  <aside class="admin-sidebar" role="navigation" aria-label="Admin navigation">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">Jonisha<span>.</span></div>
+      <div class="sidebar-sub">Admin Dashboard</div>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <!-- Populated by JS -->
+    </nav>
+    <div class="sidebar-footer">
+      <a href="/" target="_blank">← View Site</a>
+      <button id="logout-btn" class="logout-btn">Sign Out</button>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="admin-main">
+    <!-- Top bar -->
+    <div class="admin-topbar">
+      <div style="display:flex;align-items:center;gap:0.75rem">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+        <span class="topbar-title" id="topbar-title">Dashboard</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="/" target="_blank" class="btn btn-outline btn-sm">View Site ↗</a>
+      </div>
+    </div>
+
+    <!-- Content area -->
+    <div class="admin-content" id="admin-content">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+</div>
+
+<!-- Toast -->
+<div id="toast" role="alert" aria-live="polite"></div>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>

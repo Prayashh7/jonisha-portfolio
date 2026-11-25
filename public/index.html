@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonisha Thapa — UI/UX Designer</title>
+  <meta name="description" content="UI/UX Designer based in Nepal, crafting intuitive and beautiful digital experiences.">
+  <meta name="keywords" content="UI/UX Designer, Nepal, Figma, Product Design, User Experience">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jonisha Thapa — UI/UX Designer">
+  <meta property="og:description" content="UI/UX Designer based in Nepal, crafting intuitive and beautiful digital experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+</head>
+<body>
+
+<!-- ── Page Loader ── -->
+<div id="page-loader" aria-hidden="true">
+  <div class="loader-logo">Jonisha<span>.</span></div>
+</div>
+
+<!-- ── Navigation ── -->
+<nav id="navbar" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Jonisha Thapa — Home">
+        <span class="nav-logo-text">Jonisha<span> Thapa</span></span>
+      </a>
+      <div id="nav-links" class="nav-links" role="list">
+        <!-- Populated by JS -->
+      </div>
+      <button id="nav-hamburger" class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Main Content ── -->
+<main id="main-content">
+
+  <!-- ── Hero ── -->
+  <section id="hero" class="section">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left: text -->
+        <div class="hero-text">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-text">UI/UX Designer</span>
+          </div>
+          <h1 class="hero-headline">Designing experiences that feel <em>effortless.</em></h1>
+          <p class="hero-sub">UI/UX Designer based in Nepal — creating user-centered digital products.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary hero-cta-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline hero-cta-secondary">Get In Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat hero-stat-1">
+              <span class="number">—</span>
+              <span class="label">Projects</span>
+            </div>
+            <div class="hero-stat hero-stat-2">
+              <span class="number">—</span>
+              <span class="label">Clients</span>
+            </div>
+            <div class="hero-stat hero-stat-3">
+              <span class="number">—</span>
+              <span class="label">Years Exp.</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right: photo -->
+        <div class="hero-image-wrap fade-in">
+          <div class="hero-image-frame">
+            <div class="hero-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span>Profile photo</span>
+            </div>
+          </div>
+          <div class="hero-image-deco"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap fade-in">
+          <div class="about-image-frame">
+            <!-- Populated by JS if profileImage exists -->
+          </div>
+          <div class="about-image-badge">
+            <div class="big">✦</div>
+            <div class="small">Design First</div>
+          </div>
+        </div>
+        <div class="about-text fade-in fade-in-delay-1">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-heading">About Me</h2>
+          <hr class="section-divider">
+          <p class="about-content">I'm a UI/UX designer passionate about crafting intuitive, beautiful digital products. Add your personal story here.</p>
+          <div class="about-highlights">
+            <div class="about-highlight about-highlight-1">
+              <span class="number">—</span>
+              <span class="label">Projects Completed</span>
+            </div>
+            <div class="about-highlight about-highlight-2">
+              <span class="number">—</span>
+              <span class="label">Happy Clients</span>
+            </div>
+            <div class="about-highlight about-highlight-3">
+              <span class="number">—</span>
+              <span class="label">Years Experience</span>
+            </div>
+          </div>
+          <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#contact" class="btn btn-primary">Work With Me</a>
+            <a id="resume-btn" href="#" class="btn btn-outline" download style="display:none">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom: var(--space-12);">
+        <span class="section-label">What I Do</span>
+        <h2 class="section-heading">Skills &amp; Expertise</h2>
+        <hr class="section-divider" style="margin: var(--space-4) auto 0;">
+      </div>
+      <div id="skills-grid" class="skills-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom: var(--space-12);">
+        <div>
+          <span class="section-label">My Work</span>
+          <h2 class="section-heading" style="margin-bottom:0">Selected Projects</h2>
+        </div>
+      </div>
+      <div id="projects-grid" class="projects-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Design Process ── -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="process-heading">
+        <div>
+          <span class="section-label">How I Work</span>
+          <h2 class="section-heading">A considered design process</h2>
+        </div>
+        <p>From a first question to a refined interaction, each step keeps people, clarity, and purpose in view.</p>
+      </div>
+      <div id="process-grid" class="process-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <span class="section-label">Career</span>
+      <h2 class="section-heading">Work Experience</h2>
+      <hr class="section-divider">
+      <div id="experience-timeline" class="timeline">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Education ── -->
+  <section id="education" class="section">
+    <div class="container">
+      <span class="section-label">Background</span>
+      <h2 class="section-heading">Education</h2>
+      <hr class="section-divider">
+      <div id="education-timeline" class="timeline">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services ── -->
+  <section id="services" class="section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom: var(--space-12);">
+        <span class="section-label">What I Offer</span>
+        <h2 class="section-heading">Services</h2>
+        <hr class="section-divider" style="margin: var(--space-4) auto 0;">
+      </div>
+      <div id="services-grid" class="services-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ── -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom: var(--space-12);">
+        <span class="section-label">Kind Words</span>
+        <h2 class="section-heading">What Clients Say</h2>
+        <hr class="section-divider" style="margin: var(--space-4) auto 0;">
+      </div>
+      <div id="testimonials-grid" class="testimonials-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Certifications ── -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <span class="section-label">Credentials</span>
+      <h2 class="section-heading">Certifications</h2>
+      <hr class="section-divider">
+      <div id="certifications-grid" class="certs-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom: var(--space-12);">
+        <span class="section-label">Say Hello</span>
+        <h2 class="section-heading">Get In Touch</h2>
+        <p class="contact-subheading" style="color:var(--muted); max-width:500px; margin:0 auto;">Have a project in mind? I'd love to hear from you.</p>
+        <hr class="section-divider" style="margin: var(--space-6) auto 0;">
+      </div>
+      <div class="contact-grid">
+        <!-- Left: info -->
+        <div class="contact-info">
+          <a href="mailto:jonishathapa23@gmail.com" class="contact-item">
+            <div class="contact-item-icon">✉</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value contact-email-link">jonishathapa23@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+9779824223361" class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value contact-phone-link">+977-9824223361</div>
+            </div>
+          </a>
+          <a href="https://wa.me/9779824223361" target="_blank" rel="noopener noreferrer" class="contact-item contact-whatsapp-link">
+            <div class="contact-item-icon">💬</div>
+            <div>
+              <div class="contact-item-label">WhatsApp</div>
+              <div class="contact-item-value">Chat on WhatsApp</div>
+            </div>
+          </a>
+        </div>
+        <!-- Right: form -->
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact_name">Your Name</label>
+              <input type="text" id="contact_name" name="contact_name" placeholder="Jane Smith" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contact_email">Email Address</label>
+              <input type="email" id="contact_email" name="contact_email" placeholder="jane@example.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact_subject">Subject</label>
+            <input type="text" id="contact_subject" name="contact_subject" placeholder="Project inquiry" required>
+          </div>
+          <div class="form-group">
+            <label for="contact_message">Message</label>
+            <textarea id="contact_message" name="contact_message" placeholder="Share details about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+          <div id="contact-message" class="form-message" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo footer-logo-text">Jonisha<span> Thapa</span></div>
+        <p class="footer-tagline">UI/UX Designer crafting thoughtful digital experiences.</p>
+        <div class="footer-social">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigation</div>
+        <div class="footer-links footer-nav-links">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <div class="footer-links">
+          <a href="mailto:jonishathapa23@gmail.com">jonishathapa23@gmail.com</a>
+          <a href="tel:+9779824223361">+977-9824223361</a>
+          <a href="https://wa.me/9779824223361" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2024 Jonisha Thapa. All rights reserved.</span>
+      <a href="/admin" style="color:rgba(255,255,255,0.25); font-size:0.7rem;">Admin</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Project Modal ── -->
+<div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="modal-title" class="modal-title" style="font-family:var(--font-heading)"></h3>
+      <button class="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-image"></div>
+      <p class="modal-desc" style="margin-bottom:1.5rem;color:var(--charcoal-mid);line-height:1.75;"></p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.5rem;font-size:0.875rem;">
+        <div>
+          <div style="color:var(--muted);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">My Role</div>
+          <div class="modal-role" style="font-weight:500;"></div>
+        </div>
+        <div>
+          <div style="color:var(--muted);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Tools</div>
+          <div class="modal-tools" style="font-weight:500;"></div>
+        </div>
+        <div>
+          <div style="color:var(--muted);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;">Year</div>
+          <div class="modal-year" style="font-weight:500;"></div>
+        </div>
+      </div>
+      <div class="modal-case-study" aria-label="Case study details"></div>
+      <a href="#" class="btn btn-primary modal-live-link" target="_blank" rel="noopener noreferrer" style="display:none">
+        View Live ↗
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── Back to Top ── -->
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
